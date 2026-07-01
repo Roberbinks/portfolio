@@ -1,11 +1,11 @@
 {
-  "name": "Hamish Williams",
-  "role": "Designer",
-  "disciplines": ["Developer", "Prototyper", "Animator", "Illustrator", "Modder"],
-  "url": "https://hamishw.com",
-  "bluesky": "hamishw.com",
-  "figma": "@Hamish",
-  "github": "HamishMW",
-  "repo": "https://github.com/HamishMW/portfolio",
-  "ascii": "__  __  __\n\u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215\n"
+  "name": "Yassine Salah",
+  "role": "Ingénieur d'affaires",
+  "disciplines": ["IT & Ingénierie", "Événementiel", "Business Development", "Gestion de projet"],
+  "url": "https://portfolio-navy-nu-17.vercel.app",
+  "github": "Roberbinks",
+  "linkedin": "https://www.linkedin.com/in/yassine-salah-0a928b264/",
+  "email": "salah-yassine@outlook.com",
+  "repo": "https://github.com/Roberbinks/portfolio",
+  "ascii": "YASSINE SALAH"
 }
