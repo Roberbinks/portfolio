@@ -41,7 +41,7 @@ const ProfileText = ({ visible, titleId }) => (
 
 export const Profile = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);
-  const titleId = \`${id}-title\`;
+  const titleId = `${id}-title`;
 
   return (
     <Section
@@ -86,14 +86,14 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}
-                  srcSet={\`${profileImg} 480w, ${profileImgLarge} 960w\`}
+                  srcSet={`${profileImg} 480w, ${profileImgLarge} 960w`}
                   width={960}
                   height={1280}
-                  sizes={\`(max-width: ${media.mobile}px) 100vw, 480px\`}
+                  sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Yassine Salah"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                  <use href={\`${katakana}#katakana-profile\`} />
+                  <use href={`${katakana}#katakana-profile`} />
                 </svg>
               </div>
             </div>
