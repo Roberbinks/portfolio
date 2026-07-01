@@ -125,9 +125,9 @@ export const Home = () => {
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
         title="Événementiel & sponsoring"
-        description="Chef de projet & responsable commercial : prospection de sponsors, coordination logistique et gestion d'événements de +1 000 participants en présentiel et 50 000 spectateurs en direct."
-        buttonText="Voir sur LinkedIn"
-        buttonLink="https://www.linkedin.com/in/yassine-salah-0a928b264/"
+        description="Responsable commercial au BDE : prospection de sponsors et organisation de tournois e-sport (FGC / Super Smash Bros.) jusqu'à 1 024 joueurs, avec des milliers de spectateurs en ligne."
+        buttonText="Lire l'article"
+        buttonLink="/articles/evenementiel-et-esport"
         model={{
           type: 'phone',
           alt: 'App login screen',
