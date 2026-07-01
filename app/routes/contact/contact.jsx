@@ -15,7 +15,7 @@ export const meta = () => {
   return baseMeta({
     title: 'Contact',
     description:
-      'Contactez Yassine Salah, ingénieur d'affaires IT & événementiel.',
+      "Contactez Yassine Salah, ingénieur d'affaires IT & événementiel.",
   });
 };
 
