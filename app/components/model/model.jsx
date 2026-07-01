@@ -87,17 +87,23 @@ export const Model = ({
   const reduceMotion = useReducedMotion();
   const rotationX = useSpring(0, rotationSpringConfig);
   const rotationY = useSpring(0, rotationSpringConfig);
+  const [contextFailed, setContextFailed] = useState(false);
 
   useEffect(() => {
     const { clientWidth, clientHeight } = container.current;
 
-    renderer.current = new WebGLRenderer({
-      canvas: canvas.current,
-      alpha: true,
-      antialias: false,
-      powerPreference: 'high-performance',
-      failIfMajorPerformanceCaveat: true,
-    });
+    try {
+      renderer.current = new WebGLRenderer({
+        canvas: canvas.current,
+        alpha: true,
+        antialias: false,
+        powerPreference: 'high-performance',
+        failIfMajorPerformanceCaveat: true,
+      });
+    } catch (error) {
+      setContextFailed(true);
+      return;
+    }
 
     renderer.current.setPixelRatio(2);
     renderer.current.setSize(clientWidth, clientHeight);
@@ -223,6 +229,7 @@ export const Model = ({
   }, []);
 
   const blurShadow = useCallback(amount => {
+    if (!renderer.current) return;
     blurPlane.current.visible = true;
 
     // Blur horizontally and draw in the renderTargetBlur
@@ -246,6 +253,7 @@ export const Model = ({
 
   // Handle render passes for a single frame
   const renderFrame = useCallback(() => {
+    if (!renderer.current) return;
     const blurAmount = 5;
 
     // Remove the background
@@ -305,7 +313,7 @@ export const Model = ({
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
-      if (!container.current) return;
+      if (!container.current || !renderer.current) return;
 
       const { clientWidth, clientHeight } = container.current;
 
@@ -335,7 +343,8 @@ export const Model = ({
       {...rest}
     >
       <canvas className={styles.canvas} ref={canvas} />
-      {models.map((model, index) => (
+      {!contextFailed &&
+        models.map((model, index) => (
         <Device
           key={JSON.stringify(model.position)}
           renderer={renderer}
