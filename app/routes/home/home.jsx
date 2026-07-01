@@ -105,8 +105,8 @@ export const Home = () => {
         index={1}
         title="Développement commercial IT"
         description="Ingénieur d'affaires chez ADENIS : 350 K€ de CA généré, cycle de vente complet du besoin à la signature, avec un panel de candidats déjà qualifiés."
-        buttonText="Discutons-en"
-        buttonLink="/contact"
+        buttonText="Lire l'article"
+        buttonLink="/articles/ingenieur-d-affaires-it"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
