@@ -18,26 +18,30 @@ import styles from './profile.module.css';
 const ProfileText = ({ visible, titleId }) => (
   <Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Bonjour" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      Je m'appelle Yassine, ingénieur d'affaires spécialisé dans l'IT et l'ingénierie. Mon
+      parcours a commencé côté technique — technicien informatique niveau 3 chez le CNES et
+      Covéa — ce qui me donne aujourd'hui un vrai atout : je comprends réellement les
+      besoins des équipes que j'accompagne. Chez ADENIS, j'ai généré 350 K€ de chiffre
+      d'affaires en pilotant l'intégralité du cycle de vente, avec un panel de candidats
+      déjà qualifiés pour les besoins de l'entreprise.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      En parallèle, je développe et coordonne des projets événementiels : prospection de
+      sponsors, partenariats, logistique et gestion d'événements réunissant plus de 1 000
+      participants en présentiel et 50 000 spectateurs en ligne. Ce double profil —
+      technique, commercial et événementiel — me permet de faire le lien entre les besoins,
+      les équipes et les résultats. Une opportunité, un projet, une envie d'échanger ?{' '}
+      <Link href="/contact">Écrivez-moi</Link>.
     </Text>
   </Fragment>
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
   const [focused, setFocused] = useState(false);
-  const titleId = `${id}-title`;
+  const titleId = \`${id}-title\`;
 
   return (
     <Section
@@ -62,7 +66,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Envoyez-moi un message
               </Button>
             </div>
             <div className={styles.column}>
@@ -74,7 +78,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   collapseDelay={1000}
                 />
                 <div className={styles.tagText} data-visible={visible}>
-                  About me
+                  À propos
                 </div>
               </div>
               <div className={styles.image}>
@@ -82,14 +86,14 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   reveal
                   delay={100}
                   placeholder={profileImgPlaceholder}
-                  srcSet={`${profileImg} 480w, ${profileImgLarge} 960w`}
+                  srcSet={\`${profileImg} 480w, ${profileImgLarge} 960w\`}
                   width={960}
                   height={1280}
-                  sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                  sizes={\`(max-width: ${media.mobile}px) 100vw, 480px\`}
+                  alt="Yassine Salah"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                  <use href={`${katakana}#katakana-profile`} />
+                  <use href={\`${katakana}#katakana-profile\`} />
                 </svg>
               </div>
             </div>
