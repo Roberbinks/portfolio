@@ -174,3 +174,4 @@ export const Home = () => {
     </div>
   );
 };
+// layout: highlights band
