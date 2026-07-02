@@ -84,10 +84,10 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 <Image
                   reveal
                   delay={100}
-                  placeholder={profileImgPlaceholder}
-                  srcSet={`${profileImg} 480w, ${profileImgLarge} 960w`}
-                  width={960}
-                  height={1280}
+                  src="/static/esprit-shonen-lec.jpeg"
+                  placeholder="/static/esprit-shonen-lec.jpeg"
+                  width={899}
+                  height={1599}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Yassine Salah"
                 />
