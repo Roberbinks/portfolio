@@ -1,9 +1,9 @@
 .profile {
   width: 100vw;
-  min-height: 100vh;
-  margin-top: 60px;
+  min-height: 85vh;
+  margin-top: 24px;
   margin-bottom: 40px;
-  padding-top: 60px;
+  padding-top: 32px;
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
