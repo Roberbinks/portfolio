@@ -21,12 +21,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Bonjour" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Je m'appelle Yassine, ingénieur d'affaires spécialisé dans l'IT et l'ingénierie. Mon
-      parcours a commencé côté technique — technicien informatique niveau 3 chez le CNES et
+      Je m'appelle Yassine, ingénieur d'affaires spécialisé dans l'IT et l'évènementiel. Mon
+      parcours a commencé côté technique — technicien informatique N3 puis référent chez le CNES et
       Covéa — ce qui me donne aujourd'hui un vrai atout : je comprends réellement les
       besoins des équipes que j'accompagne. Chez ADENIS, j'ai généré 350 K€ de chiffre
-      d'affaires en pilotant l'intégralité du cycle de vente, avec un panel de candidats
-      déjà qualifiés pour les besoins de l'entreprise.
+      d'affaires en pilotant l'intégralité du cycle de vente, avec un panel de solution de service manager et de cybersécurité.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       En parallèle, je développe et coordonne des projets événementiels : prospection de
