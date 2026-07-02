@@ -1,21 +1,21 @@
 .summary {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
-  max-height: 1080px;
+  max-height: 900px;
   padding-bottom: var(--spaceL);
-  margin: 120px 0;
+  margin: var(--spaceL) 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (--mediaDesktop) {
-    margin: var(--space2XL) 0;
+    margin: var(--spaceL) 0;
   }
 
   @media (--mediaTablet) {
     height: auto;
-    margin: var(--space3XL) 0;
+    margin: var(--spaceXL) 0;
   }
 
   @media (--mediaMobile) {
