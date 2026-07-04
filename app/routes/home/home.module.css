@@ -1,3 +1,39 @@
 .home {
   overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Décoration de fond : halos terracotta ambiants + grille technique (blueprint / e-sport) */
+.home::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: var(--background);
+  background-image:
+    radial-gradient(130% 100% at 50% 32%, transparent 56%, color-mix(in oklab, black 42%, transparent) 100%),
+    radial-gradient(closest-side at 84% 4%, color-mix(in oklab, var(--primary) 24%, transparent), transparent),
+    radial-gradient(closest-side at 2% 94%, color-mix(in oklab, var(--primary) 16%, transparent), transparent),
+    linear-gradient(color-mix(in oklab, var(--sand) 5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--sand) 5%, transparent) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    1300px 1050px,
+    1100px 950px,
+    58px 58px,
+    58px 58px;
+  background-position:
+    center,
+    top right,
+    bottom left,
+    center,
+    center;
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    repeat,
+    repeat;
 }
