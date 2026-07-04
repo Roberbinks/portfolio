@@ -1,7 +1,7 @@
 import config from '~/config.json';
 
 const { name, url, twitter } = config;
-const defaultOgImage = `${url}/static/yassine-1x1.jpg`;
+const defaultOgImage = `${url}/static/yassine-1x1.jpg.jpg`;
 
 export function baseMeta({
   title,
