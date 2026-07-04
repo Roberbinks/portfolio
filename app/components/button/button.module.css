@@ -77,6 +77,7 @@
       }
 
       &:hover {
+        --buttonTextColor: var(--primaryHover);
         transform: none;
         background: transparent;
       }
