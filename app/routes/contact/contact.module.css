@@ -312,3 +312,15 @@
     animation: fade-in var(--durationL) ease var(--durationXL) forwards;
   }
 }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spaceM);
+  margin-top: calc(var(--spaceXL) * 2);
+}
+
+.actions .button {
+  margin-top: 0;
+}
