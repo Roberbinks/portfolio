@@ -21,11 +21,11 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Bonjour" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      Je m'appelle Yassine, ingénieur d'affaires spécialisé dans l'IT et l'évènementiel. Mon
+      Je m'appelle Yassine, ingénieur d'affaires spécialisé dans l'IT et l'événementiel. Mon
       parcours a commencé côté technique — technicien informatique N3 puis référent chez le CNES et
       Covéa — ce qui me donne aujourd'hui un vrai atout : je comprends réellement les
-      besoins des équipes que j'accompagne. Chez ADENIS, j'ai généré 350 K€ de chiffre
-      d'affaires en pilotant l'intégralité du cycle de vente, avec un panel de solution de service manager et de cybersécurité.
+      besoins des équipes que j'accompagne. Chez ADENIS, j'ai généré 350 k€ de chiffre
+      d'affaires en pilotant l'intégralité du cycle de vente, avec un panel de solutions de service management et de cybersécurité.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       En parallèle, je développe et coordonne des projets événementiels : prospection de
@@ -83,11 +83,12 @@ export const Profile = ({ id, visible, sectionRef }) => {
               <div className={styles.image}>
                 <Image
                   reveal
+                  cover
                   delay={100}
-                  src="/static/esprit-shonen-lec.jpeg"
-                  placeholder="/static/esprit-shonen-lec.jpeg"
-                  width={899}
-                  height={1599}
+                  src="/static/yassine-4x5.jpg"
+                  placeholder="/static/yassine-4x5.jpg"
+                  width={800}
+                  height={1000}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Yassine Salah"
                 />
