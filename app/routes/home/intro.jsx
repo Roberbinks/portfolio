@@ -22,9 +22,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const { disciplines } = config;
   const [disciplineIndex, setDisciplineIndex] = useState(0);
   const prevTheme = usePrevious(theme);
-  const introLabel = [disciplines.slice(0, -1).join(', '), disciplines.slice(-1)[0]].join(
-    ', and '
-  );
+  const introLabel = disciplines.join(', ');
   const currentDiscipline = disciplines.find((item, index) => index === disciplineIndex);
   const titleId = `${id}-title`;
   const scrollToHash = useScrollToHash();
@@ -74,7 +72,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
-                  {`${config.role} + ${introLabel}`}
+                  {`${config.role} — ${introLabel}`}
                 </VisuallyHidden>
                 <span aria-hidden className={styles.row}>
                   <span
@@ -118,7 +116,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               data-hidden={scrollIndicatorHidden}
               onClick={handleScrollClick}
             >
-              <VisuallyHidden>Scroll to projects</VisuallyHidden>
+              <VisuallyHidden>Voir les projets</VisuallyHidden>
             </RouterLink>
             <RouterLink
               to="/#details"
@@ -127,7 +125,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               data-hidden={scrollIndicatorHidden}
               onClick={handleScrollClick}
             >
-              <VisuallyHidden>Scroll to projects</VisuallyHidden>
+              <VisuallyHidden>Voir les projets</VisuallyHidden>
               <svg
                 aria-hidden
                 stroke="currentColor"
