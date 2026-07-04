@@ -51,7 +51,8 @@ export const Contact = () => {
               Une opportunité, une mission ou simplement l'envie d'échanger ? Écrivez-moi
               directement, je réponds sous 48h.
             </Text>
-            <Button
+            <div className={styles.actions}>
+              <Button
               className={styles.button}
               data-status={status}
               style={getDelay(tokens.base.durationM, initDelay)}
@@ -69,6 +70,7 @@ export const Contact = () => {
             >
               Mon profil LinkedIn
             </Button>
+            </div>
           </div>
         )}
       </Transition>
