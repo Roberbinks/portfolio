@@ -14,7 +14,6 @@ import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
-import { Highlights } from './highlights';
 import { ProjectSummary } from './project-summary';
 import { useEffect, useRef, useState } from 'react';
 import config from '~/config.json';
@@ -104,7 +103,6 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-      <Highlights id="highlights" />
       <ProjectSummary
         id="project-1"
         sectionRef={projectOne}
