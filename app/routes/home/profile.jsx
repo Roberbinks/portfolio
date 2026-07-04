@@ -85,8 +85,8 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   reveal
                   cover
                   delay={100}
-                  src="/static/yassine-4x5.jpg"
-                  placeholder="/static/yassine-4x5.jpg"
+                  src="/static/yassine-4x5.jpg.jpg"
+                  placeholder="/static/yassine-4x5.jpg.jpg"
                   width={800}
                   height={1000}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
