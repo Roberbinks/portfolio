@@ -7,9 +7,9 @@ const baseTokens = {
   bezierFastoutSlowin: 'cubic-bezier(0.4, 0.0, 0.2, 1)',
   durationXS: '200ms',
   durationS: '300ms',
-  durationM: '400ms',
-  durationL: '600ms',
-  durationXL: '800ms',
+  durationM: '250ms',
+  durationL: '350ms',
+  durationXL: '450ms',
   systemFontStack:
     'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif',
   fontStack: `Gotham, var(--systemFontStack)`,
