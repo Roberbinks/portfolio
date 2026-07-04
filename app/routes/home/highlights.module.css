@@ -44,8 +44,8 @@
   gap: var(--spaceXS);
   padding: var(--spaceXL) var(--spaceL) var(--spaceL);
   border-radius: 8px;
-  background: var(--backgroundLight);
-  border: 1px solid color-mix(in lab, var(--text) 12%, transparent);
+  background: var(--sand);
+  border: 1px solid color-mix(in lab, #14110C 14%, transparent);
 }
 
 .card::before {
@@ -62,12 +62,12 @@
   font-size: var(--fontSizeH5);
   font-weight: var(--fontWeightBold);
   line-height: 1.15;
-  color: var(--textTitle);
+  color: #14110C;
 }
 
 .label {
   font-size: var(--fontSizeBodyS);
-  color: var(--textLight);
+  color: color-mix(in lab, #14110C 62%, transparent);
   text-transform: uppercase;
   letter-spacing: 0.04em;
   line-height: 1.3;
