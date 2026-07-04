@@ -111,7 +111,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="Développement commercial IT"
-        description="Ingénieur d'affaires chez ADENIS (MSP) : 350 K€ de CA généré, cycle de vente complet du besoin à la signature, sur des solutions de service management et de cybersécurité."
+        description="Ingénieur d'affaires chez ADENIS (MSP) : 350 k€ de CA généré, cycle de vente complet du besoin à la signature, sur des solutions de service management et de cybersécurité."
         buttonText="Lire l'article"
         buttonLink="/articles/ingenieur-d-affaires-it"
         model={{
