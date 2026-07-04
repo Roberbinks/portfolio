@@ -1,16 +1,16 @@
 .summary {
-  height: 60vh;
+  height: 48vh;
   width: 100%;
-  max-height: 680px;
+  max-height: 540px;
   padding-bottom: var(--spaceL);
-  margin: var(--spaceS) 0;
+  margin: 0;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (--mediaDesktop) {
-    margin: var(--spaceS) 0;
+    margin: 0;
   }
 
   @media (--mediaTablet) {
@@ -206,7 +206,7 @@
   transition-property: opacity;
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationM);
-  transition-delay: 1.3s;
+  transition-delay: 0.5s;
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;
