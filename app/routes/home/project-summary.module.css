@@ -15,6 +15,7 @@
 
   @media (--mediaTablet) {
     height: auto;
+    max-height: none;
     margin: var(--spaceL) 0;
   }
 
